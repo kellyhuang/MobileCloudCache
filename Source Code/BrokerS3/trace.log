@@ -1,0 +1,5 @@
+12/Jun/2012 16:02:25  0    [main] INFO  edu.uci.awsuploader.AwsInit  - Creating user db file: [C:\Users\Swapnil\workspace\BrokerS3\aws_user_info.db]
+ 12/Jun/2012 16:02:25  1    [main] INFO  edu.uci.awsuploader.AwsInit  - Opening user db file: [C:\Users\Swapnil\workspace\BrokerS3\aws_user_info.db]
+ 12/Jun/2012 16:02:25  82   [Network] INFO  edu.uci.awsuploader.AwsNetwork  - Server IP address: [169.234.19.85], Port: [8888]
+ 12/Jun/2012 16:02:25  82   [Network] INFO  edu.uci.awsuploader.AwsNetwork  - Server socket id: [ServerSocket[addr=/169.234.19.85,port=0,localport=8888]] created successfully!
+ 

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true" >
+
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff">
+ 
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dip"
+                android:paddingBottom="0dip">
+                <!-- Logo Start-->
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dip"
+                    android:layout_marginLeft="0dip"
+                    android:src="@drawable/logo" />
+
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <LinearLayout 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:padding="2dip" >
+
+            <TextView android:id="@+id/welcomeMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:layout_marginTop="0dip"
+                android:layout_marginBottom="20dip"
+                android:textColor="#372c24" />
+
+            
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:gravity="center"
+                android:text="Upload more files"/>
+
+		    <Button
+		        android:id="@+id/browse"
+		        android:layout_width="150dip"
+		        android:layout_height="match_parent"
+		        android:layout_marginBottom="2dip"
+		        android:layout_marginTop="10dip"
+		        android:layout_gravity="center"
+		        android:text="Browse" />
+		
+		    <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:textColor="#372c24"
+                android:gravity="center"
+                android:text="See what you uploaded"/>
+		    
+		    <Button
+		        android:id="@+id/upload"
+		        android:layout_width="150dip"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dip"
+              	android:layout_marginBottom="10dip"
+              	android:layout_gravity="center"
+		        android:text="Get File List" />
+		
+		</LinearLayout>
+		
+        <!-- Footer Start -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/body"
+            android:background="@layout/footer_repeat"
+            android:baselineAligned="false" >
+
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#fff">
+ 
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dip"
+                android:paddingBottom="0dip">
+                <!-- Logo Start-->
+                <ImageView android:src="@drawable/logo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="110dip"
+                            android:layout_marginLeft="0dip"/>
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        
+        <!-- Registration Form -->
+        <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/body"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="4dip"
+          android:layout_below="@id/header">
+          <!-- UserName Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="User Name"/>
+
+          <EditText
+              android:id="@+id/reg_username"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="2dip"
+              android:layout_marginTop="2dip"
+              android:hint="username"
+              android:singleLine="true" />
+
+          <!--  Email Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Email"/>
+
+          <EditText
+              android:id="@+id/reg_email"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="2dip"
+              android:layout_marginTop="2dip"
+              android:hint="email"
+              android:singleLine="true" />
+
+          <!-- Password Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Password"/>
+
+          <EditText
+              android:id="@+id/reg_password"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="2dip"
+              android:password="true"
+              android:hint="password"
+              android:singleLine="true" />
+
+          <!-- Register Button -->
+          <Button
+              android:id="@+id/registerBtn"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:text="Register New Account" />
+
+          <!-- Link to Login Screen -->
+          <TextView android:id="@+id/loginLink"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="0dip"
+                android:text="Already have account! Login here"
+                android:gravity="center"
+                android:textSize="15dip"
+                android:textColor="#025f7c"/>
+ 
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+        
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/footer_repeat"
+                android:layout_below="@id/body"
+                android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+        
+  </RelativeLayout>
+</ScrollView>

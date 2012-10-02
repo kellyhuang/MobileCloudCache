@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uci.mobileUpload"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".AwsAppLoginActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+	        android:label="@string/app_name"
+	        android:name=".AwsAppRegistrationActivity" >
+	        <intent-filter >
+	            <action android:name="android.intent.action.REGISTRATION" />
+	            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        
+        <activity
+	        android:label="@string/app_name"
+	        android:name=".AwsAppUploadActivity" >
+	        <intent-filter >
+	            <action android:name="android.intent.action.UPLOAD" />
+	            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        
+        <activity
+	        android:label="@string/app_name"
+	        android:name=".AwsAppGetFileListActivity" >
+	        <intent-filter >
+	            <action android:name="android.intent.action.GETLIST" />
+	            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    
+    <service android:enabled="true" android:name=".FileUploadService" />
+    </application>
+    
+    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name = "android.permission.INTERNET"/>
+
+    
+</manifest>

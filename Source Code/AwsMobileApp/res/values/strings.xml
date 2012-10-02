@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">z!pCloud</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up!</string>
+    <string name="Submit">Submit</string>
+
+</resources>
